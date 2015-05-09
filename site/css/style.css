@@ -9,25 +9,158 @@ body {
     box-shadow: 2px 2px 5px black;
 }
 #header-line {
-    width: 600px;
+    width: 800px;
     height: 2px;
     background-color: #d6c427;
-    margin-left: 200px;
-    margin-top: 85px;
+    margin-left: 180px;
+    margin-top: 50px;
     position: absolute;
 }
-#header #content {
-    width: 800px;
+#header-content {
+    width: 980px;
     height: 180px;
     margin-left: auto;
     margin-right: auto;
-    background-color: blue;
+    box-shadow: none;
 }
 #header #logo {
-    width: 600px;
-    height: 500px;
+    width: 120px;
+    height: 120px;
     position: absolute;
-    margin-top: 30px;
     margin-left: 30px;
     background-image: url("../img/logo.png");
+}
+#header #menu .text {
+    width: 100px;
+    height: 26px;
+    color: #e2b100;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 4px;
+    margin-left: 17px;
+    float: lefT;
+    cursor: pointer;
+    font-family: menu;
+    transition: all 0.2s ease-in-out;
+}
+#header #menu .text:hover{
+    color: whitE;
+    transition: all 0.2s ease-in-out;
+}
+#header #menu .text:hover .icon {
+    display: block;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+#header #menu .text .icon {
+    opacity: 0;
+    display: none;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 12px;
+}
+#header-content #menu #title {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 23px;
+    color: #e28700;
+    font-size: 18px;
+    font-family: menu;
+    cursor: default;
+}
+#menu-placement {
+    width: 480px;
+    height: 40px;
+    margin-left: 510px;
+    margin-top: 20px;
+    position: absolute;
+}
+@font-face {
+    font-family: menu;
+    src: url(../fonts/menu-font.ttf);
+}
+#welcome-box {
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 110px;
+    text-align: center;
+    font-family: menu;
+    color: whitesmoke;
+    font-size: 25px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 780px;
+}
+
+.dropdown .dropdown-menu {
+    position: absolute;
+    margin-top: 150px;
+    display: none;
+    margin: 0;
+    list-style: none; /** Remove list bullets */
+    width: 100%; /** Set the width to 100% of it's parent */
+    padding: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/** Button Styles **/
+.dropdown button {
+    background: #efe22f; /* Old browsers */
+    background: -moz-linear-gradient(top,  #efe22f 0%, #db9d29 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efe22f), color-stop(100%,#db9d29)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #efe22f 0%,#db9d29 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #efe22f 0%,#db9d29 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #efe22f 0%,#db9d29 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #efe22f 0%,#db9d29 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efe22f', endColorstr='#db9d29',GradientType=0 ); /* IE6-9 */
+
+    color: #FFFFFF;
+    border: none;
+    margin: 0;
+    padding: 0.4em 0.8em;
+    font-size: 1em;
+    width: 200px;
+    border-radius: 4px 4px 0px 0px;
+}
+.dropdown button:hover {
+    background: #fff132; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fff132 0%, #f4bf2e 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff132), color-stop(100%,#f4bf2e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fff132 0%,#f4bf2e 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fff132 0%,#f4bf2e 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fff132 0%,#f4bf2e 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fff132 0%,#f4bf2e 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff132', endColorstr='#f4bf2e',GradientType=0 ); /* IE6-9 */
+
+}
+
+/** List Item Styles **/
+.dropdown a {
+    display: block;
+    padding: 0.2em 0.8em;
+    text-decoration: none;
+    background: #edd700;
+    font-family: arial;
+    color: #333333;
+    transition: all 0.2s ease-in-out;
+
+}
+
+/** List Item Hover Styles **/
+.dropdown a:hover {
+    background: #edcf02;
+    transition: all 0.2s ease-in-out;
+    color: white;
 }

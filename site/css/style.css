@@ -7,6 +7,7 @@ body {
     height: 200px;
     background-color: #1a191a;
     box-shadow: 2px 2px 5px black;
+    z-index: 2;
 }
 #header-line {
     width: 800px;
@@ -97,7 +98,7 @@ body {
 .dropdown {
     position: relative;
     display: inline-block;
-    margin-top: 80px;
+    margin-top: 140px;
     margin-left: 780px;
 }
 
@@ -163,4 +164,83 @@ body {
     background: #edcf02;
     transition: all 0.2s ease-in-out;
     color: white;
+}
+.dropdown-2 {
+    position: absolute;
+    display: inline-block;
+    margin-top: -30px;
+    margin-left: 550px;
+}
+
+.dropdown-2 .dropdown-menu {
+    position: absolute;
+    margin-top: 150px;
+    display: none;
+    margin: 0;
+    list-style: none; /** Remove list bullets */
+    width: 100%; /** Set the width to 100% of it's parent */
+    padding: 0;
+}
+
+.dropdown-2:hover .dropdown-menu {
+    display: block;
+}
+
+/** Button Styles **/
+.dropdown-2 button {
+    background: #4049ef; /* Old browsers */
+    background: -moz-linear-gradient(top, #4953db 0%, #4049ef 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,# #4953db), color-stop(100%,#4049ef)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #4953db 0%,#4049ef 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #4953db 0%, #4049ef 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #4953db 0%, #4049ef 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #4953db 0%, #4049ef 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=' 4953DB ', endColorstr=' #4049ef ',GradientType=0 ); /* IE6-9 */
+
+    color: #FFFFFF;
+    border: none;
+    margin: 0;
+    padding: 0.4em 0.8em;
+    font-size: 1em;
+    width: 200px;
+    border-radius: 4px 4px 0px 0px;
+}
+.dropdown-2 button:hover {
+    background: #4049ef; /* Old browsers */
+    background: -moz-linear-gradient(top, #4953db 0%, #4049ef 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,# #4953db), color-stop(100%,#4049ef)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #4953db 0%,#4049ef 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #4953db 0%, #4049ef 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #4953db 0%, #4049ef 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #4953db 0%, #4049ef 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=' 4953DB ', endColorstr=' #4049ef ',GradientType=0 ); /* IE6-9 */
+}
+
+/** List Item Styles **/
+.dropdown-2 a {
+    display: block;
+    padding: 0.2em 0.8em;
+    text-decoration: none;
+    background: #4953DB;
+    font-family: arial;
+    color: #333333;
+    transition: all 0.2s ease-in-out;
+
+}
+
+/** List Item Hover Styles **/
+.dropdown-2 a:hover {
+    background: #4049EF;
+    transition: all 0.2s ease-in-out;
+    color: white;
+}
+#slide-1 {
+    width: 1000px;
+    height: 100%;
+    background-color: red;
+}
+#slide-2 {
+    width: 1000px;
+    height: 100%;
+    background-color: green;
 }

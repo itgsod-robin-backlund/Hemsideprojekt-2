@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta charset="UTF-8">
+    <title>MLG - Om oss</title>
+</head>
+<body>
+    <div id="header">
+    <div id="header-content">
+        <div id="logo"></div>
+        <div id="menu">
+            <div id="welcome-box">
+                Välkommen till <br style="font-weight: bold; font-size: 30px;"> MLG School
+            </div>
+            <div id="title">MLG School</div>
+            <div id="menu-placement">
+                <div class="text" onclick="window.location.href = 'index.html';">Hem
+                    <div class="icon"><img src="img/home-icon.png"></div>
+                </div>
+                <div class="text" onclick="window.location.href = 'om-oss.html';">Om oss
+                    <div class="icon"><img src="img/about-us-icon.png"></div>
+                </div>
+                <div class="text" onclick="window.location.href = 'program.html';">Program
+                    <div class="icon"><img src="img/menu-icons.png"></div>
+                </div>
+                <div class="text" onclick="window.location.href = 'karta.html';">Karta
+                    <div class="icon"><img src="img/map-icon.png"></div>
+                </div>
+            </div>
+        </div>
+        <div id="header-line"></div>
+        <div class="dropdown">
+            <button>Vem är du?</button>
+            <ul class="dropdown-menu" style="z-index: 200000;">
+                <li><a href="#home">Blivande Student</a></li>
+                <li><a href="#about">Förälder</a></li>
+                <li><a href="#contact" style="border-radius: 0px 0px 4px 4px;">Lärare</a></li>
+            </ul>
+        </div>
+        <div class="dropdown-2" style="z-index: 200000;">
+            <button>Vart vi finns</button>
+            <ul class="dropdown-menu">
+                <li><a href="#home">Stockholm</a></li>
+                <li><a href="#about">Malmö</a></li>
+                <li><a href="#about">Järna</a></li>
+                <li><a href="#about">Gnesta</a></li>
+                <li><a href="#contact" style="border-radius: 0px 0px 4px 4px;">Södertälje</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div id="programm-container">
+        <div id="title">Klicka på det programmet du är intresserad av:</div>
+        <div id="natur-programmet">
+            <a onclick="myFunction('<div class=\'programm-title\'>Natur</div>')" id="natur" class="kit"></a>
+            <div id="somethingelse">
+            </div>
+            <script>
+                function submit(){
+                    document.getElementById('demo').innerHTML = '<div id="kit-popup" class="pay">TEST<input type="button" id="cancel-button" value="Köp Nu" onClick="submit()"></input></div>';
+
+                }
+            </script>
+            <div id="demo"></div>
+            <script>
+                function myFunction(text) {
+                    document.getElementById("demo").innerHTML = '<div id="kit-popup" >' + text + '<br><input type="button" id="cancel-button" value="Tillbaka" onClick="submit()"></div>';
+                }
+            </script>
+
+        </div>
+
+        <div id="teknik-programmet">
+            <a onclick="myFunction('<div class=\'programm-title\'>Teknik</div>')" id="teknik" class="kit"></a>
+            <div id="somethingelse">
+            </div>
+            <script>
+                function submit(){
+                    document.getElementById('demo').innerHTML = '<div id="kit-popup" class="pay">TEST<input type="button" id="cancel-button" value="Köp Nu" onClick="submit()"></input></div>';
+
+                }
+            </script>
+            <div id="demo"></div>
+            <script>
+                function myFunction(text) {
+                    document.getElementById("demo").innerHTML = '<div id="kit-popup" >' + text + '<br><input type="button" id="cancel-button" value="Tillbaka" onClick="submit()"></div>';
+                }
+            </script>
+
+        </div>
+
+        <div id="samhälle-programmet">
+            <a onclick="myFunction('<div class=\'programm-title\'>Samhälle</div>')" id="sam" class="kit"></a>
+            <div id="somethingelse">
+            </div>
+            <script>
+                function submit(){
+                    document.getElementById('demo').innerHTML = '<div id="kit-popup" class="pay">TEST<input type="button" id="cancel-button" value="Köp Nu" onClick="submit()"></input></div>';
+
+                }
+            </script>
+            <div id="demo"></div>
+            <script>
+                function myFunction(text) {
+                    document.getElementById("demo").innerHTML = '<div id="kit-popup" >' + text + '<br><input type="button" id="cancel-button" value="Tillbaka" onClick="submit()"></div>';
+                }
+            </script>
+
+        </div>
+
+        <div id="musik-programmet">
+            <a onclick="myFunction('<div class=\'programm-title\'>Kultur</div>')" id="kultur" class="kit"></a>
+            <div id="somethingelse">
+            </div>
+            <script>
+                function submit(){
+                    document.getElementById('demo').innerHTML = '<div id="kit-popup" class="pay">TEST<input type="button" id="cancel-button" value="Köp Nu" onClick="submit()"></input></div>';
+
+                }
+            </script>
+            <div id="demo"></div>
+            <script>
+                function myFunction(text) {
+                    document.getElementById("demo").innerHTML = '<div id="kit-popup" >' + text + '<br><input type="button" id="cancel-button" value="Tillbaka" onClick="submit()"></div>';
+                }
+            </script>
+
+        </div>
+    </div>
+</body>
+</html>
